@@ -1,0 +1,49 @@
+
+
+Tema 1: Venda de Ingressos no Cinema
+• Funcionalidades:
+o Cadastro de Filmes: anota-se para filme o código, nome do filme, gênero (String) e
+sinopse.
+o Cadastro de Salas: anota-se para sala o número da sala e a quantidade de assentos
+o Cadastro de Seção: relaciona-se em cada seção a sala (objeto), um horário (só hora, mas
+utilizar classes adequadas: Date, por exemplo) e o filme (objeto).
+o Venda de ingressos: realiza o registro de uma venda, relacionando a seção e realizando o
+controle da quantidade de assentos.
+o Relatórios: venda por filme, por horários, salas, seções, filmes que estiveram em mais
+seções, salas mais utilizadas, etc.
+
+
+Classe:
+
+Movie
+
+String code;
+String name;
+String category;
+String description;
+
+Theater
+
+int room_number;
+int seats;
+
+Time
+
+Theater theater;
+Date time;
+Movie movie;
+
+Ticket
+
+String purchase_code;
+Movie movie;
+Theater room_number, seats;
+Schedule schedule;
+
+Reports
+
+Tickets/movie;
+Tickets/schedule;
+Tickets/theater;
+Most popular movie;
+Most used theater;
